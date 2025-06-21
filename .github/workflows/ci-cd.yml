@@ -1,0 +1,61 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Cache Maven packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      - name: Build with Maven
+        run: ./mvnw clean package --no-transfer-progress
+
+      - name: Run tests
+        run: ./mvnw test --no-transfer-progress
+
+      - name: Build Docker image
+        run: docker build -t employee-app .
+
+      - name: Save Docker image as artifact
+        run: docker save employee-app | gzip > employee-app.tar.gz
+
+      - name: Upload Docker image artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: employee-app-image
+          path: employee-app.tar.gz
+
+  # Optional: Deploy job (example, adjust as needed)
+  # deploy:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Download Docker image artifact
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: employee-app-image
+  #     - name: Load Docker image
+  #       run: gunzip -c employee-app.tar.gz | docker load
+  #     - name: Deploy to server
+  #       run: echo "Deploy logic here"
+

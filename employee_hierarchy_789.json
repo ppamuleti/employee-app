@@ -1,0 +1,331 @@
+{
+  "id" : 789,
+  "managerId" : null,
+  "name" : "Rama",
+  "role" : "Director",
+  "reportees" : [ {
+    "id" : 456,
+    "managerId" : 789,
+    "name" : "Shivam",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 123,
+      "managerId" : 456,
+      "name" : "Ravi",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 1011,
+      "managerId" : 456,
+      "name" : "Krishna",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 1415,
+      "managerId" : 456,
+      "name" : "Manoj",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 1213,
+    "managerId" : 789,
+    "name" : "Sreekanth",
+    "role" : "employee",
+    "reportees" : [ ]
+  }, {
+    "id" : 10001,
+    "managerId" : 789,
+    "name" : "Manager10001",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10019,
+      "managerId" : 10001,
+      "name" : "Emp10019",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10026,
+      "managerId" : 10001,
+      "name" : "Emp10026",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10028,
+      "managerId" : 10001,
+      "name" : "Emp10028",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10031,
+      "managerId" : 10001,
+      "name" : "Emp10031",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10036,
+      "managerId" : 10001,
+      "name" : "Emp10036",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10037,
+      "managerId" : 10001,
+      "name" : "Emp10037",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10040,
+      "managerId" : 10001,
+      "name" : "Emp10040",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10041,
+      "managerId" : 10001,
+      "name" : "Emp10041",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10002,
+    "managerId" : 789,
+    "name" : "Manager10002",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10022,
+      "managerId" : 10002,
+      "name" : "Emp10022",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10003,
+    "managerId" : 789,
+    "name" : "Manager10003",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10030,
+      "managerId" : 10003,
+      "name" : "Emp10030",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10044,
+      "managerId" : 10003,
+      "name" : "Emp10044",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10045,
+      "managerId" : 10003,
+      "name" : "Emp10045",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10049,
+      "managerId" : 10003,
+      "name" : "Emp10049",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10004,
+    "managerId" : 789,
+    "name" : "Manager10004",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10032,
+      "managerId" : 10004,
+      "name" : "Emp10032",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10005,
+    "managerId" : 789,
+    "name" : "Manager10005",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10025,
+      "managerId" : 10005,
+      "name" : "Emp10025",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10035,
+      "managerId" : 10005,
+      "name" : "Emp10035",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10038,
+      "managerId" : 10005,
+      "name" : "Emp10038",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10006,
+    "managerId" : 789,
+    "name" : "Manager10006",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10018,
+      "managerId" : 10006,
+      "name" : "Emp10018",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10046,
+      "managerId" : 10006,
+      "name" : "Emp10046",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10007,
+    "managerId" : 789,
+    "name" : "Manager10007",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10021,
+      "managerId" : 10007,
+      "name" : "Emp10021",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10039,
+      "managerId" : 10007,
+      "name" : "Emp10039",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10008,
+    "managerId" : 789,
+    "name" : "Manager10008",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10020,
+      "managerId" : 10008,
+      "name" : "Emp10020",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10023,
+      "managerId" : 10008,
+      "name" : "Emp10023",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10033,
+      "managerId" : 10008,
+      "name" : "Emp10033",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10042,
+      "managerId" : 10008,
+      "name" : "Emp10042",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10043,
+      "managerId" : 10008,
+      "name" : "Emp10043",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10048,
+      "managerId" : 10008,
+      "name" : "Emp10048",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10009,
+    "managerId" : 789,
+    "name" : "Manager10009",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10027,
+      "managerId" : 10009,
+      "name" : "Emp10027",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10010,
+    "managerId" : 789,
+    "name" : "Manager10010",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10024,
+      "managerId" : 10010,
+      "name" : "Emp10024",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10034,
+      "managerId" : 10010,
+      "name" : "Emp10034",
+      "role" : "employee",
+      "reportees" : [ ]
+    }, {
+      "id" : 10047,
+      "managerId" : 10010,
+      "name" : "Emp10047",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10011,
+    "managerId" : 789,
+    "name" : "Manager10011",
+    "role" : "manager",
+    "reportees" : [ {
+      "id" : 10029,
+      "managerId" : 10011,
+      "name" : "Emp10029",
+      "role" : "employee",
+      "reportees" : [ ]
+    } ]
+  }, {
+    "id" : 10012,
+    "managerId" : 789,
+    "name" : "Emp10012",
+    "role" : "employee",
+    "reportees" : [ ]
+  }, {
+    "id" : 10013,
+    "managerId" : 789,
+    "name" : "Emp10013",
+    "role" : "employee",
+    "reportees" : [ ]
+  }, {
+    "id" : 10014,
+    "managerId" : 789,
+    "name" : "Emp10014",
+    "role" : "employee",
+    "reportees" : [ ]
+  }, {
+    "id" : 10015,
+    "managerId" : 789,
+    "name" : "Emp10015",
+    "role" : "employee",
+    "reportees" : [ ]
+  }, {
+    "id" : 10016,
+    "managerId" : 789,
+    "name" : "Emp10016",
+    "role" : "employee",
+    "reportees" : [ ]
+  }, {
+    "id" : 10017,
+    "managerId" : 789,
+    "name" : "Emp10017",
+    "role" : "employee",
+    "reportees" : [ ]
+  } ]
+}
