@@ -147,7 +147,7 @@ public class EmployeeService {
             }
 
             // Step 3: Create synthetic hierarchy
-            int totalSynthetic = 50;
+            int totalSynthetic = 50; //we can even load these from application.properties
             int managerCount = Math.max(1, totalSynthetic / 4);
             int employeeCount = totalSynthetic - managerCount;
             int directToDirectorEmployeeCount = Math.max(1, employeeCount / 6);
