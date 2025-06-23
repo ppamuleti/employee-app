@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk-alpine
 WORKDIR /app
 
 # Copy the built jar to the container
-RUN cp target/*.jar app.jar
+COPY target/*.jar app.jar
 
 # Copy Maven wrapper and set permissions
 COPY mvnw ./
