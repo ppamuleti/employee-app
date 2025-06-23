@@ -156,4 +156,12 @@ This project uses **Swagger/OpenAPI** for interactive API documentation.
 
 ---
 
+## Additional Notes
+
+- The application could also use OAuth2 for authentication and authorization, but JWT was chosen for simplicity and ease of integration.
+- CI/CD could be implemented with Jenkins or ArgoCD, but GitHub Actions was selected for its seamless integration with GitHub repositories.
+- Redis could be used for distributed caching, but Caffeine was chosen for its simplicity and in-memory performance.
+- Any RDBMS (like MySQL, PostgreSQL, etc.) could be used for persistence, but H2 was selected for its lightweight, in-memory capabilities during development.
+- The application can be deployed on Kubernetes for orchestration and scalability in production environments.
+
 For more details, see the source code and Swagger documentation.
