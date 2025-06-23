@@ -41,7 +41,7 @@ public class EmployeeService {
     public File processAndDownloadEmployees(MultipartFile file) {
         try {
             importEmployeeData(file.getInputStream());
-            return writeEmployeesToExcel(employeeRepository.findAll());
+            return writeEmployeesToExcel(getAllEmployeesFromCache());
         } catch (IOException e) {
             throw new FileProcessingException("Failed to process employee file", e);
         }
@@ -298,7 +298,7 @@ public class EmployeeService {
      * @return List of EmployeeDTOs with higher salary than their manager
      */
     public List<EmployeeDTO> getEmployeesWithHigherSalaryThanManager() {
-        return employeeRepository.findAll().stream()
+        return getAllEmployeesFromCache().stream()
                 .filter(emp -> emp.getManager() != null && emp.getSalary() > emp.getManager().getSalary())
                 .map(emp -> new EmployeeDTO(
                         emp.getId(),
