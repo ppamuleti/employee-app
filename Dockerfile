@@ -7,6 +7,10 @@ WORKDIR /app
 # Copy the built jar to the container
 RUN cp target/*.jar app.jar
 
+# Copy Maven wrapper and set permissions
+COPY mvnw ./
+RUN chmod +x mvnw
+
 # Expose the default Spring Boot port
 EXPOSE 8081
 
