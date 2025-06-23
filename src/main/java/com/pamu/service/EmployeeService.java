@@ -278,7 +278,7 @@ public class EmployeeService {
      * @return List of EmployeeDTOs eligible for gratuity
      */
     public List<EmployeeDTO> getGratuityEligibleEmployees() {
-        return employeeRepository.findAll().stream()
+        return getAllEmployeesFromCache().stream()
                 .filter(emp -> emp.getDoj() != null &&
                         ChronoUnit.MONTHS.between(emp.getDoj(), LocalDate.now()) > 60)
                 .map(emp -> new EmployeeDTO(
